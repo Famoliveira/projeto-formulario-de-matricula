@@ -24,7 +24,7 @@
         </div>
         <h1>Formulário de matrícula</h1>
         <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
-        <form method="post" enctype="multipart/form-data">
+        <form method="post" enctype="multipart/form-data" novalidate>
           <fieldset class="child-info">
             <legend>Informações da criança</legend>
 
@@ -73,31 +73,53 @@
             <legend>Endereço residencial</legend>
             <div class="input-wrapper">
               <label for="cep">CEP</label>
-              <input type="text" id="cep">
+              <input type="text" id="cep" name="cep">
             </div>
 
             <div class="flex">
               <div class="input-wrapper flex-2">
                 <label for="street">Rua</label>
-                <input type="text" id="street" value="Rua comandante Ituriel" disabled>
+                <input type="text" id="street" name="street" value="Rua comandante Ituriel" disabled>
               </div>
               <div class="input-wrapper flex-1">
                 <label for="number">Número</label>
-                <input type="number" id="number">
+                <input type="number" id="number" name="number">
               </div>
             </div>
 
             <div class="flex">
                 <div class="input-wrapper flex-2">
                   <label for="city">Cidade</label>
-                  <input type="text" id="city" value="São Pedro da Aldeia" disabled>
+                  <input type="text" id="city" name="city" value="São Pedro da Aldeia" disabled>
                 </div>
                 <div class="input-wrapper flex-1">
                   <label for="state">Estado</label>
-                  <input type="text" id="state" value="RJ" disabled>
+                  <input type="text" id="state" name="state" value="RJ" disabled>
                 </div>
             </div>
 
+          </fieldset>
+
+          <fieldset class="guardian">
+            <legend>Informações do responsável</legend>
+
+            <div class="input-wrapper">
+              <label for="guardian">Nome do responsável</label>
+              <input type="text" id="guardian" name="guardian">
+              <small>Principal responsável legal e contato de emergência</small>
+            </div>
+            <div class="input-wrapper">
+              <label for="phone">Telefone </label>
+              <input type="number" id="phone" name="phone" placeholder="(22) 99245-7758">
+            </div>
+            <div class="input-wrapper">
+              <label for="mail">E-mail</label>
+              <input type="email" id="mail" name="mail">
+              <div class="error">
+                <img src="assets/icons/alert-circle.svg" alt="icone de alerta vermelho">
+                <span>Insira um e-mail válido</span>
+              </div>
+            </div>
           </fieldset>
         </form>
       </div>
