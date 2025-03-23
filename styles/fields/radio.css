@@ -4,7 +4,7 @@ label + .radio-wrapper {
 
 .radio-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
   gap: 1rem;
 }
 
@@ -35,7 +35,7 @@ label + .radio-wrapper {
 
   &:hover, &:focus-within {
     border: 1px solid var(--stroke-highlight);
-    
+
     & .radio-img {
       background-image: url(../../assets/icons/radio-hover.svg);
     }
