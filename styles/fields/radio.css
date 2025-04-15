@@ -10,6 +10,7 @@ label + .radio-wrapper {
 
 .radio-inner {
   border: 1px solid var(--stroke-default);
+  box-sizing: border-box;
   border-radius: 0.5rem;
   display: grid;
   justify-items: center;
@@ -42,7 +43,9 @@ label + .radio-wrapper {
   }
 
   &:has(:checked) {
-    border: 2px solid var(--stroke-highlight);
+    border: 1px solid var(--stroke-highlight);
+    outline: 1px solid var(--stroke-highlight);
+    outline-offset: -1px;
 
     & .radio-img {
       background-image: url(../../assets/icons/radio-checked.svg);
