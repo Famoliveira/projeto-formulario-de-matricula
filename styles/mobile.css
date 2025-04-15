@@ -62,4 +62,8 @@
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
+
+  form {
+    padding-bottom: 2.5rem;
+  }
 }
