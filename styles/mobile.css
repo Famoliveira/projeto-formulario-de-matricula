@@ -3,6 +3,29 @@
     display: none;
   }
 
+  .header-mobile-only {
+    display: flex;
+    background-color: var(--surface-secondary);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+
+    margin-inline: -1.5rem;
+    margin-top: -1.5rem;
+    padding: 1.5rem;
+
+    & img:nth-child(1) {
+      width: 80%;
+      height: auto;
+      margin-bottom: 0.75rem;
+    }
+    & img:nth-child(2) {
+      width: 100%;
+      height: auto;
+    }
+  }
+
   main {
     grid-column: 1 / -1;
     width: 100%;
