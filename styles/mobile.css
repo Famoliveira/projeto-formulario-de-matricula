@@ -63,7 +63,9 @@
     gap: 1rem;
   }
 
-  form {
-    padding-bottom: calc(2.5rem + env(safe-area-inset-bottom, 3rem));;
+  .mobile-bottom-space {
+    display: block;
+    height: 4rem;
+    background-color: transparent;
   }
 }

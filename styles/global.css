@@ -25,7 +25,8 @@
 
 }
 
-.header-mobile-only {
+.header-mobile-only,
+.mobile-bottom-space {
   display: none;
 }
 
