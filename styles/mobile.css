@@ -1,0 +1,42 @@
+@media (max-width: 26.5625em) {
+  aside {
+    display: none;
+  }
+
+  main {
+    grid-column: 1 / -1;
+    width: 100%;
+    padding: 1.5rem !important;
+  }
+
+  .main-container {
+    padding: 0;
+  }
+
+  .actions-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .actions-wrapper button {
+    width: 80%;
+    text-align: center;
+  }
+
+  .actions-wrapper .btn-secondary {
+    margin-left: 0;
+  }
+
+  .flex {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .radio-wrapper,
+  .enroll-options .radio-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
